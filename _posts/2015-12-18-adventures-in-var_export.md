@@ -7,20 +7,20 @@ title: adventures in var_export()ing a resource
 
 <p>Since a resource can’t be exported var_dump() replaces it with null. Good thing to know in those wtf moments.</p>
 
-<p>Ex:</p>
+```php
+php > $a = fopen('deleteme.php','r');
 
-<p>php &gt; $a = fopen('deleteme.php','r');</p>
+php > var_export($a);
 
-<p>php &gt; var_export($a);</p>
+NULL
 
-<p>NULL</p>
+php > var_export(is_resource($a));
 
-<p>php &gt; var_export(is_resource($a));</p>
+true
 
-<p>true</p>
+php > var_dump($a);
 
-<p>php &gt; var_dump($a);</p>
+resource(2) of type (stream)
 
-<p>resource(2) of type (stream)</p>
-
-<p>php &gt;&nbsp;</p>
+php > 
+```
