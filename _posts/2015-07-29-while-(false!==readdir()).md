@@ -1,6 +1,6 @@
 ---
 layout: post
-title: adventures in var_export()ing a resource
+title: while (false !== readdir())
 ---
 
 Had fun today with readdir(), this function expects to be passed a valid handle that was created with opendir().  The php documentation states: "Returns the entry name on success or FALSE on failure". The trouble is that opendir might have returned false because it was given an invalid directory and if you pass readdir() that false it returns NULL.
