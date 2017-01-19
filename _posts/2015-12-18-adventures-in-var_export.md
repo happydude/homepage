@@ -1,4 +1,5 @@
 ---
+author: Jason Davis
 layout: post
 title: adventures in var_export()ing a resource
 ---
