@@ -1,4 +1,5 @@
 ---
+author: Jason Davis
 layout: post
 title: Fun with javascript Date
 ---
