@@ -1,4 +1,5 @@
 ---
+author: Jason Davis
 layout: post
 title: jekyll new
 ---
