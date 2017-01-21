@@ -18,3 +18,4 @@ echo $float; //prints 0 in both versions
 var_export($float == 0); //true
 var_export($float === 0); //false
 var_export($float === 0.0); //true
+```
