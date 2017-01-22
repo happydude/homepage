@@ -10,6 +10,29 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
+  {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+  <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  {% if page.title %}
+  <meta content="article" property="og:type">
+  {% else %}
+  <meta content="website" property="og:type">
+  {% endif %}
+  <meta content="http://www.jasondavis.net/assets/icons/apple-touch-icon.png" property="og:image">
+  {% if page.url %}
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+  {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  {% endif %}
+  {% if page.author %}
+  <meta content="{{page.author}}" property="article:author">
+  {% endif %}
+  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" property="og:description">
+
   <!--
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
 
