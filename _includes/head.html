@@ -33,6 +33,11 @@
   <meta content="{{ site.title }}" property="og:site_name">
   <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" property="og:description">
 
+  {% if site.twitter_username %}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{site.twitter_username}}" />
+  {% endif %}
+
   <!--
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
 
