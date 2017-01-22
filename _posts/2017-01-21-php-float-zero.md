@@ -8,7 +8,7 @@ My derp moment of the week was trying to figure out why 0 === 0 was false. Turns
 It wasn’t obvious to me initially because when exporting the value php 5.6 was printing 0.
 So, even though I was seeing 0, I was comparing a float zero to an int zero.
 
-Testing on [https://3v4l.org/nFQ3O] shows PHP7 will var_export((float) 0) as 0.0. So just another thing to look forward to in PHP7.
+Testing on [https://3v4l.org](https://3v4l.org/nFQ3O) shows PHP7 will var_export((float) 0) as 0.0. So just another thing to look forward to in PHP7.
 
 ```php
 <?php
