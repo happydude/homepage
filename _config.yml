@@ -23,6 +23,8 @@ url: "https://www.jasondavis.net" # the base hostname & protocol for your site, 
 twitter_username: happydudeJD
 github_username:  happydude
 
+layouts_dir:  _layout
+
 # Build settings
 markdown: kramdown
 theme: minima
