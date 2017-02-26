@@ -4,7 +4,7 @@ layout: post
 title: PHP type cast (unset)
 ---
 
-<p>I can't really think of a use case but the (unset) cast exists:</p>
+<p>I would love to see a use case in php for type casting to (unset)</p>
 
 
 ```php
