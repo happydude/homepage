@@ -2,6 +2,7 @@
 author: Jason Davis
 layout: post
 title: Fun with php DateTime
+modified: 2017-02-26T14:00:00-07:00
 ---
 
 Create a DateTime object
@@ -27,7 +28,7 @@ array (
   ),
 )
 ```
-But thehe date is set to March 1st:
+Feburary 30th is changed to March 1st:
 ```php
 php > echo $date->format('Y-m-d');
 2016-03-01
