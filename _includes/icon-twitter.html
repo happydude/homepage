@@ -1,1 +1,5 @@
+{% if include.pageurl %}
+<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ include.pageurl }}&via={{ include.username }}&text=%20Re%3A{{ include.text }}" rel="me" target="_blank"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">Tweet @{{ include.username }}</span></a>
+{% else %}
 <a href="https://twitter.com/{{ include.username }}" rel="me"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">{{ include.username }}</span></a>
+{% endif %}

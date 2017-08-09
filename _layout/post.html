@@ -18,4 +18,10 @@ layout: default
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
+
+  {% if site.twitter_username %}
+    {% include icon-twitter.html username=site.twitter_username pageurl=page.url text=page.title %}
+  {% endif %}
+
 </article>
+
