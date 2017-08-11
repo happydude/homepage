@@ -41,4 +41,8 @@ permalink: /about/
   <div class="footer-col footer-col-3">
     <p>{{ site.description | escape }}</p>
   </div>
+  
+  <div class="footer-col footer-col-4">
+    <p>Thanks to Github-Pages and Jekyll</p>
+  </div>
 </div>
