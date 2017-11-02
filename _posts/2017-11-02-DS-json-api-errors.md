@@ -40,9 +40,9 @@ Even though source is not required by json api the RESTAdapter seems to [ignore]
 ```
 #### We can also get the error messages in the template
 ```hbs
-\{{#each model.errors.messages as |error|}}
+\{\{#each model.errors.messages as |error|\}\}
   <div class="error">
-    \{{error}}
+    \{\{error\}\}
   </div>
-\{{/each}}
+\{\{/each\}\}
 ```
