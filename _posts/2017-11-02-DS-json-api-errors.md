@@ -7,7 +7,7 @@ My win for the day: I finally tackled why when returning valid json api errors t
 
 Even though source is not required by json api the RESTAdapter seems to [ignore](https://github.com/emberjs/data/issues/3524#issuecomment-120771056) the message if a source isn't set.
 
-####PHP formatted error before json encoding:
+#### PHP formatted error before json encoding:
 (this makes me appreciate the php short array syntax)
 ```php
 ['errors' => [
@@ -18,7 +18,7 @@ Even though source is not required by json api the RESTAdapter seems to [ignore]
 ]]
 ```
 
-####Now when the adapter error is caught errors.messages should be populated
+#### Now when the adapter error is caught errors.messages should be populated
 (we can send more than one error from the backend and access them all)
 ```js
         save(model) {
@@ -38,7 +38,7 @@ Even though source is not required by json api the RESTAdapter seems to [ignore]
                 });
         }
 ```
-####We can also get the error messages in the template
+#### We can also get the error messages in the template
 ```hbs
 {{#each model.errors.messages as |error|}}
   <div class="error">
