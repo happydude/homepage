@@ -42,7 +42,7 @@ Even though source is not required by json api the RESTAdapter seems to [ignore]
 ```hbs
 {{ "{{#each model.errors.messages as |error|" }}}}
   <div class="error">
-    {{ "error" }}}}
+    {{ "{{error" }}}}
   </div>
-  {{ "/each" }}}}
+  {{ "{{/each" }}}}
 ```
