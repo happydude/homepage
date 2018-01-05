@@ -4,7 +4,7 @@ layout: post
 title: Windows Scripts Cheatsheet
 ---
 
-In days of yore I was a windows admin, this is old my old script cheat sheet.
+In days of yore I was a windows admin, this is my old dos/cmd batch script cheat sheet.
 
 Delete a reg key from HKEY_CLASSES_ROOT, this was a hack to make an msi uninstall with a missing transform file.
 ```winbatch
