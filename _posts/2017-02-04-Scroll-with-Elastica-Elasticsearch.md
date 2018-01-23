@@ -2,6 +2,7 @@
 author: Jason Davis
 layout: post
 title: Scroll Elasticsearch with Elastica 5.0
+modified: 2018-01-23T15:53:00-07:00
 ---
 
 Recently I needed to grab all of the items in an Elasticsearch index.
@@ -29,15 +30,11 @@ $search->setQuery($query);
 //return a scoll iterator with a 1 minute scroll timeout (the default),
 //this is how long we have to make our next request before elasticsearch forgets us
 $scrollIterator = $search->scroll('1m');
-//Execute the search
-$scrollIterator->rewind();
 
-while ($scrollIterator->valid()) {
-    //scroll takes care of fetching records when the foreach calls the next function
-    foreach ($scrollIterator as $page) {
-        $document = $page->current();
-
+//rewind() executes the search
+for ($scrollIterator->rewind(); $scrollIterator->valid(); $scrollIterator->next()) {
+        //first ->current gets the resultSet, the second current() gets the single Result
+        $document = $scrollIterator->current()->current();
         echo $document->getId() . " " . $document->getType() . " \n";
-    }
 }
 ```
