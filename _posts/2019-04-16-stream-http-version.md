@@ -28,6 +28,6 @@ var_export($xml);
 
 References:
 ---
-[https://www.php.net/manual/en/function.stream-context-create.php]
-[https://www.php.net/manual/en/function.file-get-contents.php]
-[https://www.php.net/manual/en/context.http.php]
+1. https://www.php.net/manual/en/function.stream-context-create.php
+2. https://www.php.net/manual/en/function.file-get-contents.php
+3. https://www.php.net/manual/en/context.http.php
