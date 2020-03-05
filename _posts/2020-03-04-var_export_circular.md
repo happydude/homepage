@@ -3,6 +3,8 @@ author: Jason Davis
 layout: post
 title: var_export does not handle circular references
 modified: 2020-03-04T17:13:00-07:00
+redirect_from:
+  - /2015/07/27/var_export_53_vs_55.html
 ---
 
 This error happens when trying to var_export() an object that references another object that references back to the exported object.
