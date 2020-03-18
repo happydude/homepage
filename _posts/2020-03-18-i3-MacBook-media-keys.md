@@ -4,6 +4,10 @@ layout: post
 title: Enable MacBook media keys in i3
 ---
 
+This worked for me on:
+    Product Name: MacBook4,1
+    Family: MacBook
+
 add to ~/.config/i3/config
 
 ```text
