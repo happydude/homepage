@@ -26,4 +26,4 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 ```
 
-Source https://askubuntu.com/a/794843/1055233
+Source [askubuntu](https://askubuntu.com/a/794843/1055233)
