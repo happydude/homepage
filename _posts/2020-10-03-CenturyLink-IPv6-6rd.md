@@ -32,7 +32,6 @@ ip tunnel add 6rd mode sit local $PUBLIC ttl 64
 ip tunnel 6rd dev 6rd 6rd-prefix $PREFIX/$PREFIX_LENGTH
 ip link set 6rd up
 ip -6 addr add $IPv6_PREFIX::1/$PREFIX_LENGTH dev 6rd
-#ip -6 addr add $IPv6_PREFIX::/$PREFIX_LENGTH dev 6rd
 ip -6 route add ::/0 via ::$RELAY_PREFIX dev 6rd
 
 LAN_INTERFACE=lan0
