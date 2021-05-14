@@ -4,7 +4,7 @@ layout: post
 title: Decode ascii binary
 ---
 
-Fun decoding the Debian post at https://bits.debian.org/2021/04/bullseye-sentience.html
+Fun decoding the Debian post at [bits.debian.org](https://bits.debian.org/2021/04/bullseye-sentience.html)
 
 Convert binary, represented as ascii 1s and 0s string
 
