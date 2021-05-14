@@ -1,0 +1,23 @@
+---
+author: Jason Davis
+layout: post
+title: Decode ascii binary
+---
+
+Fun decoding the Debian post at https://bits.debian.org/2021/04/bullseye-sentience.html
+
+Convert binary, represented as ascii 1s and 0s string
+
+
+```php
+$b = '0100001001100101011100110111010000100000011100100110010101100111011000010111001001100100011100110010110000100000011100110110010101100101001000000111100101101111011101010010000001110011011011110110111101101110001000010010000000001010001011010110001001110101011011000110110001110011011001010111100101100101';
+
+for ($i = 0; $i < strlen($b); $i += 8) {
+    echo chr(bindec(substr($b, $i, 8)));
+}
+```
+
+```
+Best regards, see you soon! 
+-bullseye
+```
