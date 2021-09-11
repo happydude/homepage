@@ -17,9 +17,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: JasonDavis.net
-# email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
+email: website@jasondavis.net
+description: >- # this means to ignore newlines until "baseurl:"
   Blog for Jason Davis from Phoenix, Arizona USA.
   Stuff about programming,electronics and computer things.
 baseurl: "" # the subpath of your site, e.g. /blog
