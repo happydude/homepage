@@ -35,6 +35,9 @@ permalink: /about/
         {% include icon-twitter.html username=site.twitter_username %}
       </li>
       {% endif %}
+      <li>
+        Mastodon <a rel="me" href="https://phpc.social/@HappyDude">@HappyDude@phpc.social </a>
+      </li>
     </ul>
   </div>
 
