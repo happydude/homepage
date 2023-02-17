@@ -36,7 +36,7 @@ permalink: /about/
       </li>
       {% endif %}
       <li>
-        Mastodon <a rel="me" href="https://phpc.social/@HappyDude">@HappyDude@phpc.social </a>
+        <a rel="me" href="https://jasondavis.net/@jason">Mastodon</a>
       </li>
     </ul>
   </div>
