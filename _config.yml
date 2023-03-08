@@ -34,7 +34,8 @@ theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
-
+  - jekyll-sitemap
+  
 include: [".well-known"]
 
 # Exclude from processing.
