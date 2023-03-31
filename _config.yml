@@ -21,8 +21,8 @@
 title: JasonDavis.net
 email: website@jasondavis.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Blog for Jason Davis from Phoenix, Arizona USA.
-  Stuff about programming,electronics and computer things.
+  Website for Jason Davis from Phoenix, Arizona USA.
+  Short posts about programming,electronics and computer things.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jasondavis.net" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: happydude
